@@ -63,9 +63,9 @@ def over?(board)
 end
 
 def winner(board)
-  if WIN_COMBINATIONS.include? ("X")
+  if won?(board) && WIN_COMBINATIONS.include? ("X")
     return "X"
-  elsif WIN_COMBINATIONS.include? ("O")
+  elsif won?(board) && WIN_COMBINATIONS.include? ("O")
     return "O"
   end
 end
