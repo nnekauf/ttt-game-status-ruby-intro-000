@@ -69,7 +69,7 @@ def winner(board)
       return "X"
     elsif board[index[0]] == "O"
       return "O"
-    elsif !won?(board) 
+    elsif index == false 
     return "nil"
   end
 end
