@@ -63,6 +63,7 @@ def over?(board)
 end
 
 def winner(board)
+  index= []
   if won?(board) = "X"
     return "X"
   elsif won?(board) = "O"
